@@ -1,0 +1,111 @@
+body {
+      
+      padding: 20px;
+}
+
+body.home-page {
+    background-color: #FCCBC0;
+    .container {
+      background-color: #fff;
+    }
+}
+
+body.work-page {
+    background-color: #fff;
+    .container {
+      background-color: #fff;
+    }
+}
+
+
+.container {
+  min-height: calc(100vh - 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@include r(block) {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+
+
+@include r(hide) {
+  display: none;
+}
+
+@include r(show) {
+  display: block;
+}
+
+.mobile-hide {
+  @media  (max-width: 40em) {
+    display: none;
+  }
+}
+
+.mobile-show {
+  @media  (min-width: 40em) {
+    display: none;
+  }
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+@include r(float-right) {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.min-viewport-height {
+  min-height: 100vh;
+}
+
+.clearfix {
+  *zoom: 1;
+
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.scrollpad {
+  height: 80vh;
+  background-color: red;
+}
+
+.trigger {
+  height: 50vh;
+  background-color: green;
+  &.active {
+    background-color: blue;
+  }
+}

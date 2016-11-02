@@ -1,0 +1,28 @@
+$blue: #2756ef;
+.primary {color: $blue; }
+.primary-bg { background-color: $blue; }
+
+$tan: #fdf8f1;
+.primary-light {color: $tan; }
+.primary-light-bg { background-color: $tan; }
+
+$white: #ffffff;
+.white { color: $white; }
+.white-bg { background-color: $white; }
+
+$black: #000;
+
+$green: #7fc47c;
+.green { color: $green; }
+
+$red: #c97875;
+.red { color: $red; }
+
+$opentable: hsla(357, 71%, 53%, 1);
+$opentable-light: hsla(357, 71%, 53%, .1);
+
+$creativemarket: hsla(80, 37%, 48%, 1);
+$creativemarket-light: hsla(80, 37%, 48%, .1);
+
+$detour: hsla(170, 100%, 37%, 1);
+$detour-light: hsla(170, 100%, 37%, .2);

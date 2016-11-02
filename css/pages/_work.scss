@@ -1,0 +1,43 @@
+
+.project {
+  position: relative;
+  border-bottom: 20px solid #fff;
+  padding: 0px; 
+  &#opentable {
+    background-color: $opentable-light;
+  }
+  &#creativemarket {
+    background-color: $creativemarket-light;
+  }
+
+  &#detour {
+    background-color: $detour-light;
+  }
+  .project-details {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    background: #fff;
+    padding: 40px;
+    transform: translateY(-50%);
+
+    h2 {
+      font-size: 48px;
+      margin-bottom: 0;
+      padding: 0;
+      line-height: 1;
+    }
+    a {
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
+  .project-images {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    margin-bottom: 40px;
+  }
+}

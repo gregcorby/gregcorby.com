@@ -1,0 +1,22 @@
+.about {
+  p {
+    font-size: 24px;
+    font-weight: 100;
+  }
+  
+}
+
+h2.intro {
+    font-size: 64px;
+    line-height: 1.3;
+    margin: 0 0 80px 0;
+    color: #000;
+    span {
+      background-color: $blue;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAOCAYAAABevFBuAAABd0lEQVRYhd3YvUodQRjG8d/RgEZQxGCiCGkUS0GCd2CjhYggXoBFBCvBKIGQwkZBITaCFl5AEMRKm9xBCIKlaJEqGvEDBD9AWYs5ViKc1dk9Hv+w5TzPu8/OzDuzhSRJEi+PSxziL05xjHPU4x2a8BEf8LZMNT7Km3IXUOQCf/ATq7hKMbYWoxjBJ9RFry4lhTLO1AQ7mMF6RN0hfEcXChF1S6Ycod5gA+P4n6HPeyxhUM4rsipHrwssCvvisGwDVdQfLvotFv1zIY+ZeoRZ/MjYpxQm8BXNWZpkGeoevghL/aUxiHl0ZCEeO9QEvzGG7Yi6WdGNZfSI2NRihXqLTXzGvwh6edOKFfSj+rliz21UV8KXbsCAygyUUPeA8B7L0p2TH/DUmXqCBaEBvUaqMI1J4faWirSh7uIb1tIaVTAjwgWls9QBpYR6jC1MqdzlHYM2zKFP+P/wKPeh3j/XOMA+fgmb91mmpVYmjUJT7kU7WlAjnCAKd2vNajJcp0iXAAAAAElFTkSuQmCC);
+      background-repeat: repeat-x; 
+      background-size: 35px auto;
+      background-position: center top;
+      box-shadow: 0em -.5em 0 0 #fff inset;
+    }
+}
