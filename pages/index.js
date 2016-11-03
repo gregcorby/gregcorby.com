@@ -10,15 +10,16 @@ export default class Sass extends React.Component {
 
     return (
       <div className="home-container">
-        <DocumentTitle title={ 'Greg Corby' }></DocumentTitle>
+          <DocumentTitle title={ 'Greg Corby' }></DocumentTitle>
 
           <div className="row sm-row hero-text">
-            <h2 className="intro"><span>A sun-drenched designer on the</span><br /><span>salty coast of Southern California.</span></h2>
+            <h2 className="intro"><span>A sun-drenched designer </span><br /><span>living on the salty coast </span><br /><span>of Southern California.</span></h2>
+
           </div>
           <div className="row sm-row about">
             <div className="column sm-column-75">
-              <p>I focus on creating and refining meaningful digital experiences for great brands including Airbnb, Facebook, Creative Market, Detour, Shyp, Teespring.</p>
-              <p>I’m currently available for work, so <Link to={prefixLink('/contact/')}>send me a message</Link> or find me on<br /><a href="http://www.dribbble.com/gregcorby" target="_blank">Dribbble</a>, <a href="http://www.instagram.com/gregcorby" target="_blank">Instagram</a>, <a href="http://www.twitter.com/gregcorby" target="_blank">Twitter</a>, & <a href="http://www.facebook.com/gregcorby" target="_blank">Facebook</a>.</p>
+              <p>I help brands create &amp; refine meaningful digital experiences. <br />Previously, I've had the pleasure of working with Airbnb, Facebook, Opentable, Creative Market, Detour, Shyp, Teespring and many others.</p>
+              <p>If you're interested in working together, <Link to={prefixLink('/contact/')}>shoot me a message,</Link> <br />or find me on <a href="http://www.dribbble.com/gregcorby" target="_blank">Dribbble</a>, <a href="http://www.instagram.com/gregcorby" target="_blank">Instagram</a>, <a href="http://www.twitter.com/gregcorby" target="_blank">Twitter</a>, & <a href="http://www.facebook.com/gregcorby" target="_blank">Facebook</a>.</p>
             </div>
           </div>      
       </div>

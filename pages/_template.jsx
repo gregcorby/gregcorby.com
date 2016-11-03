@@ -12,11 +12,11 @@ module.exports = React.createClass({
     return (
     <div className="container">
       <header>
-        <div className="row sm-row">
-          <div className="column sm-column-20">
+        <div className="row">
+          <div className="column column-40">
             <h2 className="logo"><Link to={prefixLink('/')} >Greg Corby</Link></h2>
           </div>
-          <ul className="column sm-column-80">
+          <ul className="column column-60">
             <li><Link to={prefixLink('/work/')}>Work</Link></li>
             <li><Link to={prefixLink('/contact/')}>Contact</Link></li>
           </ul>

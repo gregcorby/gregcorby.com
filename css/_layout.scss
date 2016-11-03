@@ -1,16 +1,22 @@
 body {
-      
+    @media  (min-width: 40em) {
       padding: 20px;
+
+    } 
+    transition: all 300ms linear;     
+    padding: 10px;
 }
 
+
 body.home-page {
-    background-color: #FCCBC0;
+    background-color: hsl(37, 81%, 97%);
     .container {
       background-color: #fff;
     }
 }
 
 body.work-page {
+  padding: 0;
     background-color: #fff;
     .container {
       background-color: #fff;
