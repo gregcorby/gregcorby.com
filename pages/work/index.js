@@ -11,7 +11,7 @@ export default class Sass extends React.Component {
 	
 		<div id="opentable" className="project">
 			<div className="project-images">
-				<img src="/images/ot-image.png" />
+				<img src="/images/ot-image.jpg" />
 			</div>
 			<div className="project-details">
 			<h2 className="title-name">Opentable <span>—<br /> Misc Projects</span></h2>
@@ -22,7 +22,7 @@ export default class Sass extends React.Component {
 
 		<div id="creativemarket" className="project">
 			<div className="project-images">
-				<img src="/images/cm-image.png" />
+				<img src="/images/cm-image.jpg" />
 			</div>
 			<div className="project-details">
 			<h2 className="title-name">Creative Market <span>—<br /> Misc Projects</span></h2>
@@ -33,7 +33,7 @@ export default class Sass extends React.Component {
 
 		<div id="detour" className="project">
 			<div className="project-images">
-				<img src="/images/detour-image.png" />
+				<img src="/images/detour-image.jpg" />
 			</div>
 			<div className="project-details">
 			<h2 className="title-name">Detour <span>—<br /> Misc Brochures &amp; Guides</span></h2>
@@ -44,7 +44,7 @@ export default class Sass extends React.Component {
 
 		<div id="landscape" className="project">
 			<div className="project-images">
-				<img src="/images/landscape-image.png" />
+				<img src="/images/landscape-image.jpg" />
 			</div>
 			<div className="project-details">
 			<h2 className="title-name">Landscape <span>—<br /> Web App</span></h2>
@@ -54,7 +54,7 @@ export default class Sass extends React.Component {
 
 		<div id="sneakz" className="project">
 			<div className="project-images">
-				<img src="/images/sneakz-image.png" />
+				<img src="/images/sneakz-image.jpg" />
 			</div>
 			<div className="project-details">
 			<h2 className="title-name">Sneakz <span>—<br /> Custom Shopify Website</span></h2>
@@ -65,7 +65,7 @@ export default class Sass extends React.Component {
 
 		<div id="strongboalt" className="project">
 			<div className="project-images">
-				<img src="/images/strongboalt-image.png" />
+				<img src="/images/strongboalt-image.jpg" />
 			</div>
 			<div className="project-details">
 			<h2 className="title-name">Strongboalt <span>—<br /> Custom Shopify Website</span></h2>
@@ -76,7 +76,7 @@ export default class Sass extends React.Component {
 
 		<div id="outsite" className="project">
 			<div className="project-images">
-				<img src="/images/outsite-image.png" />
+				<img src="/images/outsite-image.jpg" />
 			</div>
 			<div className="project-details">
 			<h2 className="title-name">Outsite <span>—<br /> Mobile Booking App</span></h2>
