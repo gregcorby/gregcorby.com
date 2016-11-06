@@ -14,7 +14,7 @@
   }
   
   .about {
-    animation: hero-sub 800ms 1;
+    animation: hero 300ms 1;
     position: relative;
     p {
       font-size: 18px;
@@ -53,17 +53,6 @@
 }
 
 @keyframes hero {
-  0% {
-    opacity: 0;
-    top: 40px;
-  }
-  100% {
-    opacity: 1;
-    top: 0;
-  }
-}
-
-@keyframes hero-sub {
   0% {
     opacity: 0;
     top: 40px;
