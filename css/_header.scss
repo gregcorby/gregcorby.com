@@ -1,6 +1,7 @@
 header {
   position: relative;
   width: 100%;
+  animation: header-fade 300ms 1;
   @media  (min-width: 40em) {
     padding: 100px;
   }
@@ -24,7 +25,18 @@ header {
         font-size: 24px;
         line-height: 24px;
       }
+      @media  (min-width: 40em) {
+        &:hover {
+            color: $white;
+            box-shadow: 0em -1em 0 0 $black inset;
+        }
+      }
+      &:active {
+          color: $white;
+          box-shadow: 0em -1em 0 0 $blue inset;
+      }
     }
+
   }
   ul {
     text-align: right;
@@ -42,5 +54,14 @@ header {
         line-height: 24px;
       }
     }
+  }
+}
+
+@keyframes header-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

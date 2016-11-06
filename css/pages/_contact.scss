@@ -1,6 +1,7 @@
 .contact {
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
+  padding: 20px;
   input, textarea  {
     border: 1px solid rgba(0,0,0,.1);
     box-shadow: 0 0 0 0;
@@ -18,5 +19,9 @@
   .submit:hover {
     background-color: $blue-darken;
     width: 100%;
+  }
+  @media  (min-width: 40em) {
+    width: 400px;
+    padding: 0;
   }
 }

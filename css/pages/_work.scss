@@ -44,6 +44,7 @@
   .project-images {
     overflow: hidden;
     padding-bottom: 0px;
+    min-height: 80vh;
     img {
       width: 120%;
       display: block;
@@ -53,6 +54,8 @@
       margin: 0 auto;
       max-width: 1200px;
       margin-left: -10%;
+      animation: img-fade 300ms 1;
+      position: relative;
       @media  (min-width: 40em) {
         margin-left: auto;
         width: 100%;
@@ -70,4 +73,15 @@ body.work-page .project .project-images img {
 body.home-page .project .project-images img {
   transform: translateY(20px);
   opacity: 1;
+}
+
+@keyframes img-fade {
+  0% {
+    opacity: 0;
+    top: -60px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }
