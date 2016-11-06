@@ -1,6 +1,107 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700);
 
-@import url(https://fonts.googleapis.com/css?family=PT+Serif:400italic,700italic,700,400);
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-bold-webfont.woff2') format('woff2'),
+         url('ls-bold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-bolditalic-webfont.woff2') format('woff2'),
+         url('ls-bolditalic-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-extrabold-webfont.woff2') format('woff2'),
+         url('ls-extrabold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-extrabolditalic-webfont.woff2') format('woff2'),
+         url('ls-extrabolditalic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-italic-webfont.woff2') format('woff2'),
+         url('ls-italic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-light-webfont.woff2') format('woff2'),
+         url('ls-light-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-lightitalic-webfont.woff2') format('woff2'),
+         url('ls-lightitalic-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-medium-webfont.woff2') format('woff2'),
+         url('ls-medium-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-mediumitalic-webfont.woff2') format('woff2'),
+         url('ls-mediumitalic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-thin-webfont.woff2') format('woff2'),
+         url('ls-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-thinitalic-webfont.woff2') format('woff2'),
+         url('ls-thinitalic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Ls';
+    src: url('ls-webfont.woff2') format('woff2'),
+         url('ls-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -32,7 +133,7 @@ code, pre, .monospace  {
 }
 
 .sans-serif {
-  font-family: Larsseit, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Ls', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .serif {
