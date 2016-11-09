@@ -13,7 +13,7 @@ export default class Sass extends React.Component {
           <DocumentTitle title={ 'Greg Corby' }></DocumentTitle>
 
           <div className="row sm-row hero-text">
-            <h2 className="intro"><span>A sun-drenched designer </span><br /><span>living on the salty coast </span><br /><span>of Southern California.</span></h2>
+          <h2 className="intro"><span>Greg Corby is a sun-drenched designer on the the salty coast of Southern California.</span></h2>
 
           </div>
           <div className="row sm-row about">

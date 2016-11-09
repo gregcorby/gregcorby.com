@@ -1,36 +1,35 @@
 body {
     transition: all 300ms linear;     
-    padding: 10px;
-    box-shadow: 0 0 0 10px #FDCBBE inset, 0 0 0 -10px $blue inset;
+    
+    box-shadow: 0 0 0 10px #FDCBBE inset, 0 0 0 -10px #FFCBBD inset;
     opacity: 1;
     @media  (min-width: 40em) {
-      padding: 20px;
-      box-shadow: 0 0 0 20px #FDCBBE inset, 0 0 0 -20px $blue inset;
+      
+      box-shadow: 0 0 0 20px #FDCBBE inset, 0 0 0 -20px #FFCBBD inset;
     } 
 }
 
 
 body.home-page {
-    box-shadow: 0 0 0 10px #FDCBBE inset, 0 0 0 -10px $blue inset;
+    box-shadow: 0 0 0 10px #FDCBBE inset, 0 0 0 -10px #FFCBBD inset;
     opacity: 1;
     @media  (min-width: 40em) {
-      box-shadow: 0 0 0 20px #FDCBBE inset, 0 0 0 -20px $blue inset;
+      box-shadow: 0 0 0 20px #FDCBBE inset, 0 0 0 -20px #FFCBBD inset;
     }
 }
 
 body.work-page {
-    box-shadow: 0 0 0 -10px #FDCBBE inset, 0 0 0 10px $blue inset;
-    background-color: #fff;
+    box-shadow: 0 0 0 -10px #FDCBBE inset, 0 0 0 10px #FFCBBD inset;
     opacity: 1;
     @media  (min-width: 40em) {
-      box-shadow: 0 0 0 -20px #FDCBBE inset, 0 0 0 20px $blue inset;
+      box-shadow: 0 0 0 -20px #FDCBBE inset, 0 0 0 20px #FFCBBD inset;
     }
 }
 
 
 .container {
     min-height: calc(100vh - 20px);
-    background-color: #fff;
+    
     @media  (min-width: 40em) {
       min-height: calc(100vh - 40px); 
     }
