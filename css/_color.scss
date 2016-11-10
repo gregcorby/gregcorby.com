@@ -1,10 +1,10 @@
-$blue: #00BCD7;
+$blue: #72EEE0;
 .primary {color: $blue; }
 .primary-bg { background-color: $blue; }
 
 $blue-darken: #009db3;
 
-$tan: #fdf8f1;
+$tan: #FEF9F1;
 .primary-light {color: $tan; }
 .primary-light-bg { background-color: $tan; }
 
@@ -12,7 +12,7 @@ $white: #ffffff;
 .white { color: $white; }
 .white-bg { background-color: $white; }
 
-$black: #000;
+$black: #1E2023;
 
 $green: #7fc47c;
 .green { color: $green; }
@@ -28,3 +28,5 @@ $creativemarket-light: hsla(80, 37%, 48%, .1);
 
 $detour: hsla(170, 100%, 37%, 1);
 $detour-light: hsla(170, 100%, 37%, .2);
+
+$page-border: #F2C3B7;

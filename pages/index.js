@@ -17,9 +17,9 @@ export default class Sass extends React.Component {
 
           </div>
           <div className="row sm-row about">
-            <div className="column sm-column-50">
-              <p>I help brands create &amp; refine meaningful digital experiences. <br />Previously, I've had the pleasure of working with Airbnb, Facebook, Opentable, Creative Market, Detour, Shyp, Teespring and many others.</p>
-              <p>If you're interested in working together, <Link to={prefixLink('/contact/')}>shoot me a message,</Link> <br />or find me on <a href="http://www.dribbble.com/gregcorby" target="_blank">Dribbble</a>, <a href="http://www.instagram.com/gregcorby" target="_blank">Instagram</a>, <a href="http://www.twitter.com/gregcorby" target="_blank">Twitter</a>, & <a href="http://www.facebook.com/gregcorby" target="_blank">Facebook</a>.</p>
+            <div className="column sm-column-75 md-column-50">
+              <p>I help brands create &amp; refine meaningful digital experiences. Previously, I've had the pleasure of working with Airbnb, Facebook, Opentable, Creative Market, Detour, Shyp, Teespring and many others.</p>
+              <p>If you're interested in working together, <Link to={prefixLink('/contact/')}>shoot me a message,</Link> or find me on <a href="http://www.dribbble.com/gregcorby" target="_blank">Dribbble</a>, <a href="http://www.instagram.com/gregcorby" target="_blank">Instagram</a>, <a href="http://www.twitter.com/gregcorby" target="_blank">Twitter</a>, & <a href="http://www.facebook.com/gregcorby" target="_blank">Facebook</a>.</p>
             </div>
           </div>      
       </div>
