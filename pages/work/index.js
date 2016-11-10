@@ -26,7 +26,7 @@ export default class Sass extends React.Component {
 			</div>
 			<div className="project-details">
 			<h2 className="title-name">Creative Market <span>—<br /> Misc Projects</span></h2>
-				<a href="http://www.opentable.com" target="_blank">Launch Project</a>
+				<a href="http://www.creativemarket.com" target="_blank">Launch Project</a>
 			</div>
 			
 		</div>		
