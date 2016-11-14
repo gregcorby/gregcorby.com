@@ -11,21 +11,61 @@ module.exports = React.createClass({
   render () {
     return (
     <div className="container">
-      <header>
-        <div className="row">
-          <div className="column column-40">
-            <h2 className="logo"><Link to={prefixLink('/')} >Greg Corby</Link></h2>
-          </div>
-          <ul className="column column-60">
-            <li><Link to={prefixLink('/work/')}>Work</Link></li>
-            <li><Link to={prefixLink('/contact/')}>Contact</Link></li>
+      <header id="header">
+        <div className="header-content">
+          <ul>
+            <li id="about-link"><Link to={prefixLink('/')}>About</Link></li>
+            <li id="work-link"><Link to={prefixLink('/work/')}>Work</Link></li>
+            <li id="contact-link"><Link to={prefixLink('/contact/')}>Contact</Link></li>
           </ul>
         </div>
-      </header>
-      <div className="page-container">
+ 
+      </header> 
+      
+      <div id="main-container">
         {this.props.children}
       </div>
+      <div className="border"></div>
     </div>
     )
+  },
+  componentDidMount(){
+    var toggle = document.getElementById('toggle'),
+        logo = document.getElementById('logo-link'),
+        workLink = document.getElementById('work-link'),
+        contactLink = document.getElementById('contact-link'),
+        container = document.getElementById('main-container'),
+        header = document.getElementById('header');
+    
+    logo.addEventListener("click",function(){
+      header.classList.remove('open');
+      toggle.classList.remove('open');
+      container.classList.remove('open');
+    },false);
+    workLink.addEventListener("click",function(){
+      header.classList.remove('open');
+      toggle.classList.remove('open');
+      container.classList.remove('open');
+    },false);
+    contactLink.addEventListener("click",function(){
+      header.classList.remove('open');
+      toggle.classList.remove('open');
+      container.classList.remove('open');
+    },false);
+
+    toggle.addEventListener("click",function() {
+      if (header.classList.contains('open')) {
+        header.classList.remove('open');
+        toggle.classList.remove('open');
+        container.classList.remove('open');
+      } else {
+        header.classList.add('open');  
+        toggle.classList.add('open');  
+        container.classList.add('open');  
+      }
+    },false);
+  },
+  componentWillUnmount() {
+    
   }
 })
