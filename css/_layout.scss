@@ -1,18 +1,18 @@
 body {
     opacity: 1;
-    background-color: $tan;
+    background-color: $black;
     min-height: 660px;
 }
 
 .border {
-    box-shadow: 0 0 0 15px $page-border inset, 0 0 0 -15px $page-border inset;
+    box-shadow: 0 0 0 0px $black inset, 0 0 0 -15px $black inset;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     pointer-events: none;
-    opacity: .5;
+    opacity: .8;
 }
 
 body.home-page {
@@ -27,6 +27,7 @@ body.work-page {
 .container {
     min-height: 100vh;
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -38,7 +39,7 @@ body.work-page {
 }
 
 .page-container {
-  min-height: 100vh;
+  
   transition: opacity 400ms linear;    
   opacity: 0; 
   

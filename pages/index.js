@@ -14,19 +14,16 @@ export default class Sass extends React.Component {
           <DocumentTitle title={ 'Greg Corby' }></DocumentTitle>
 
           <div className="row sm-row hero-text">
-            <h2 className="intro"><span>Greg Corby is a sun-drenched &amp; salty designer living in Southern California.</span></h2>
+          <h2 className="intro"><span>Greg Corby is a <br />sun-drenched, <br />salty designer</span></h2>
           </div>
-
-          <div className="row sm-row about">
-            <div className="column sm-column-50">
-              <div className="divider"></div>
-              <p>I help brands make awesome digital experiences. I've enjoyed working with Airbnb, Facebook, Opentable, Creative Market, Shyp, to name a few.</p>
-              
-            </div>
-            <div className="column sm-column-50">
-              <div className="divider"></div>
-              <p>If you're interested in working together, <Link to={prefixLink('/contact/')}>shoot me a message,</Link> or find me on <a href="http://www.dribbble.com/gregcorby" target="_blank">Dribbble</a>, <a href="http://www.instagram.com/gregcorby" target="_blank">Instagram</a>, <a href="http://www.twitter.com/gregcorby" target="_blank">Twitter</a>, & <a href="http://www.facebook.com/gregcorby" target="_blank">Facebook</a>.</p>
-
+          
+          <div className="about">
+            <div className="row sm-row">
+                <div className="hero-image column sm-column-50"></div>
+                <div className="about-copy column sm-column-50">
+                  <p>I’m Greg Corby, a designer working in Southern California. I help brands & startups create digital stuff that’s not overly-complicated and looks nice, too.</p>
+                  <p>If you're interested in working together, <Link to={prefixLink('/contact/')}>shoot me a message,</Link> or find me on <a href="http://www.dribbble.com/gregcorby" target="_blank">Dribbble</a>, <a href="http://www.instagram.com/gregcorby" target="_blank">Instagram</a>, <a href="http://www.twitter.com/gregcorby" target="_blank">Twitter</a>, & <a href="http://www.facebook.com/gregcorby" target="_blank">Facebook</a>.</p>            
+                </div>
             </div>
             </div>      
         </div>
@@ -39,6 +36,9 @@ export default class Sass extends React.Component {
     setTimeout(function() {
       container.classList.add('loaded')
     }, 300);
+    setTimeout(function() {
+      container.classList.add('loaded-two')
+    }, 3000);
   }
   componentWillUnmount() {
     var container = document.getElementById('content-container');

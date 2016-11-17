@@ -13,8 +13,10 @@ module.exports = React.createClass({
     <div className="container">
       <header id="header">
         <div className="header-content">
+          <div className="logo">
+            <Link to={prefixLink('/')}>gregcorby.com</Link>
+          </div>
           <ul>
-            <li id="about-link"><Link to={prefixLink('/')}>About</Link></li>
             <li id="work-link"><Link to={prefixLink('/work/')}>Work</Link></li>
             <li id="contact-link"><Link to={prefixLink('/contact/')}>Contact</Link></li>
           </ul>

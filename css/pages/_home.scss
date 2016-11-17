@@ -2,13 +2,15 @@
 
 .home-container {
   position: relative;
-  top: 50vh;
-  transform: translateY(-50%);
-  padding: 40px;
+  padding-top: 110px;
+  min-height: calc(100vh - 110px);
+
   @media  (min-width: 40em) {
-    padding: 0 ;
-    padding: 0 40px;
+    background-image: none;
+    padding-top: 0; 
   }
+
+
 
   br {
       display: none;
@@ -17,63 +19,144 @@
       }
   }
   
-  .hero-text {
-
+  .hero-image {
+      display: none;
+      position: relative;
+      right: auto;
+      top: auto;
+      width: 100%;
+      background-size: cover;
+      height: 41vw;
+      background-image: url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-color: #37CAF5;
+      max-width: 100%;
+      transition: all 300ms ease-in-out;
+      @media  (min-width: 40em) {
+        display: block;
+        right: 300px;
+        position: absolute;
+        top: 0px;
+        background-size: 55vw auto;
+        width: calc(55vw - 300px);
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          margin-top: -270px;
+          right: -300px;
+          width: 300px;
+          height: 100%;
+          background-image: url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
+          background-repeat: no-repeat;
+          background-size: 55vw auto;
+          background-color: #3462AE;
+          background-position: right top;
+          transition: all 400ms ease-in-out;
+        }
+      }
   }
 
   .about {
-    position: relative;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    p {
-      font-size: 18px;
-      line-height: 28px;
-      font-weight: 200;
-      margin-bottom: 40px;
-      margin-right: 40px;
-    
-      @media  (min-width: 40em) {
-        
-        margin-bottom: 0;
+    margin: 0;
+    display: block;
+    padding: 0;
+    position: static;
+    background-color: #F5C7CA;
+    padding: 0;
+    box-shadow: 0 200px 0 0 #F5C7CA;
+    width: 100%;
+    box-sizing: border-box;
+
+    .about-copy {
+      box-sizing: border-box;
+      padding: 40px;
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 200;
+        padding: 0;
+        margin: 0;
+      
+        &:first-child {
+          margin-bottom: 20px;
+        }
+
       }
     }
+    @media  (min-width: 40em) {
+      margin-top: 180px;
+      width: calc(100% - 300px);
+      min-height: calc(100vh - 360px);
+      padding: 0 120px;
+      .about-copy {
+        padding-top: 220px;
+        padding-right: 80px;
+        padding-left: 0;
+      }
+    }
+    
+
+  
   }
+.hero-text {
+    z-index: 99;
+    
+    @media  (min-width: 40em) {
+      left: 20px;
+      position: absolute;
+    }
+    
+}
 
   h2.intro {
-      font-size: 32px;
-      line-height: 1.3;
-      margin: 80px 0 40px 0;
-      color: #black;
+      font-size: 11vw;
+      line-height: .9em;
+      margin: 0;
+      color: #fff;
       letter-spacing: -1.5px;
       position: relative;
-      max-width: 1024px;
-      margin-left: auto;
-      margin-right: auto;
       text-align: left;
-
+      padding: 0 40px 40px 40px;
+      
       @media  (min-width: 40em) {
-        font-size: 61px;
-        margin: 0 auto 80px auto;
-        text-align: center;
-      }
-      span {
-          
-          background-image: url(https://d3vv6lp55qjaqc.cloudfront.net/items/2O1B1e1n042U0A160o3j/wave.png?X-CloudApp-Visitor-Id=1032429&v=adfea6a9);
-          background-repeat: repeat-x; 
-          background-size: 25px auto;
-          background-position: 0px 10px;
-          box-shadow: 0em -.65em 0 0 $tan inset;
-          animation-name: water-mobile;
-          animation-duration: 1.5s; 
-          animation-timing-function: linear; 
-          animation-iteration-count: infinite;
-          @media  (min-width: 40em) {
-            animation-name: water;
-            background-size: 35px auto;
-          }
+        font-size: 8vw;
+        margin-left: 0px;
+        text-align: left;
+        padding: 0;
+        span {
+          -webkit-clip-path: polygon(0 1.4em, 100% 1.4em, 100% 100%, 0% 100%);
+          clip-path: polygon(0 1.4em, 100% 1.4em, 100% 100%, 0% 100%);
+          display: inherit;
+          position: relative;
+          top: -1.4em;
+          left: -3px;
+          padding-bottom: 20px;
         }
+        &:before {
+          content: "Greg Corby is a \A  sun-drenched,";
+          position: absolute;
+          top: -1.4em;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          color: #fff;
+          z-index: -1;
+          left: 0px;
+          transition: all 400ms ease-in-out;
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 1.4em, 0 1.4em);
+          clip-path: polygon(0 0, 100% 0, 100% 1.4em, 0 1.4em);
+          animation: pulse 4s infinite;
+          animation-timing-function: ease-in-out; 
+        }
+        
+      }
+      
+
   }
+
+  
 
   .divider {
     width: 20px;
@@ -84,7 +167,17 @@
   }
 
 }
+@media  (min-width: 40em) {
 
+
+  .loaded .home-container .hero-image {
+    top: -200px;
+    
+    &:after {
+      margin-top: 20px;
+    }
+  }
+}
 
 
 
@@ -109,5 +202,39 @@
   } 
   100% {
     background-position: 50px 5px;
+  }
+}
+
+
+@keyframes pulse {
+  0% {
+    left: 3px;
+    color: #fff;
+    opacity: 1;
+    
+  }
+  2% {
+    left: 3px;
+    color: #F6C7CA;
+    opacity: 1;
+  }
+  3% {
+    color: #fff;
+    opacity: .5;
+    left: -10px;
+    
+  }
+  4% {
+    left: -3px;
+    opacity: 1;
+    color: #fff;
+  }
+  5% {
+    color: #fff;
+  }
+
+  100% {
+    left: -3px;
+    
   }
 }
