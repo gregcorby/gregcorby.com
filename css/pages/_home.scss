@@ -3,21 +3,16 @@
 .home-container {
   position: relative;
   padding-top: 110px;
-  min-height: calc(100vh - 110px);
+  
 
   @media  (min-width: 40em) {
     background-image: none;
     padding-top: 0; 
   }
+}
 
 
 
-  br {
-      display: none;
-      @media  (min-width: 40em) {
-        display: block;
-      }
-  }
   
   .hero-image {
       display: none;
@@ -27,35 +22,56 @@
       width: 100%;
       background-size: cover;
       height: 41vw;
-      background-image: url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
+      background-image: linear-gradient(to right, rgba(55,201,245,1) 0%, rgba(55,201,245,1) 100%), url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
       background-repeat: no-repeat;
-      background-position: right top;
+      background-position: left bottom, left top;
       background-color: #37CAF5;
       max-width: 100%;
-      transition: all 300ms ease-in-out;
+      transition: all 200ms ease-out;
+      
       @media  (min-width: 40em) {
         display: block;
-        right: 300px;
+        right: 400px;
         position: absolute;
-        top: 0px;
-        background-size: 55vw auto;
+        top: -140px;
+        background-size: 100% 100%, 55vw auto;
         width: calc(55vw - 300px);
         &:after {
           content: "";
           display: block;
           position: absolute;
-          margin-top: -270px;
-          right: -300px;
-          width: 300px;
+          right: -400px;
+          width: 400px;
           height: 100%;
-          background-image: url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
+          background-image: linear-gradient(to right, rgba(55,231,245,1) 0%, rgba(55,231,245,1) 100%), url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
           background-repeat: no-repeat;
-          background-size: 55vw auto;
+          background-size: 100% 100%, 55vw auto;
           background-color: #3462AE;
-          background-position: right top;
-          transition: all 400ms ease-in-out;
+          background-position: right top, right top;
+          transition: all 200ms ease-out;
+          transform: translateY(-200px);
+          z-index: -1;
         }
       }
+  }
+
+  .loaded  .home-container .hero-image {
+    top: -200px;
+    
+    &:after {
+      transform: translateY(100px) translateX(0px);
+    }
+    
+  }
+
+  .loaded-text  .home-container .hero-image {
+    background-image: linear-gradient(to right, rgba(55,201,245,1) 100%, rgba(55,201,245,1) 100%), url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
+    background-size: 100% 0px, 55vw auto;
+    
+    &:after {
+      background-image: linear-gradient(to right, rgba(55,201,245,1) 100%, rgba(55,201,245,1) 100%), url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
+      background-size: 100% 0px, 55vw auto;
+    }
   }
 
   .about {
@@ -73,26 +89,30 @@
       box-sizing: border-box;
       padding: 40px;
       p {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 26px;
+        line-height: 36px;
         font-weight: 200;
         padding: 0;
         margin: 0;
+        opacity: .6;
       
         &:first-child {
           margin-bottom: 20px;
         }
 
       }
+      a {
+        font-size: 26px;
+      }
     }
     @media  (min-width: 40em) {
       margin-top: 180px;
-      width: calc(100% - 300px);
+      width: calc(100% - 400px);
       min-height: calc(100vh - 360px);
       padding: 0 120px;
       .about-copy {
         padding-top: 220px;
-        padding-right: 80px;
+        padding-right: 0px;
         padding-left: 0;
       }
     }
@@ -104,14 +124,14 @@
     z-index: 99;
     
     @media  (min-width: 40em) {
-      left: 20px;
+      left: 100px;
       position: absolute;
     }
     
 }
 
   h2.intro {
-      font-size: 11vw;
+      font-size: 12vw;
       line-height: .9em;
       margin: 0;
       color: #fff;
@@ -121,7 +141,7 @@
       padding: 0 40px 40px 40px;
       
       @media  (min-width: 40em) {
-        font-size: 8vw;
+        font-size: 6vw;
         margin-left: 0px;
         text-align: left;
         padding: 0;
@@ -131,24 +151,24 @@
           display: inherit;
           position: relative;
           top: -1.4em;
-          left: -3px;
+          left: -30px;
           padding-bottom: 20px;
+          transition: all 200ms ease-in-out;
+          opacity: 0;
         }
         &:before {
           content: "Greg Corby is a \A  sun-drenched,";
           position: absolute;
           top: -1.4em;
-          left: 0;
           width: 100%;
           height: 100%;
           color: #fff;
           z-index: -1;
-          left: 0px;
-          transition: all 400ms ease-in-out;
+          left: 40px;
+          transition: all 200ms ease-in-out;
           -webkit-clip-path: polygon(0 0, 100% 0, 100% 1.4em, 0 1.4em);
           clip-path: polygon(0 0, 100% 0, 100% 1.4em, 0 1.4em);
-          animation: pulse 4s infinite;
-          animation-timing-function: ease-in-out; 
+          opacity: 0;
         }
         
       }
@@ -166,17 +186,20 @@
     display: none;
   }
 
-}
+
 @media  (min-width: 40em) {
-
-
-  .loaded .home-container .hero-image {
-    top: -200px;
-    
-    &:after {
-      margin-top: 20px;
-    }
+  .loaded-text .home-container h2.intro:before {
+    left: 0px;
+    opacity: 1;
   }
+
+  .loaded-text .home-container h2.intro span {
+    left: -3px;
+    opacity: 1;
+  }
+
+  
+  
 }
 
 
