@@ -94,13 +94,21 @@ export default class Sass extends React.Component {
 	componentDidMount(){
 		var container = document.getElementById('content-container');
 	    document.body.classList.add('work-page');
+	    
 	    setTimeout(function() {
-	      container.classList.add('loaded')
-	    }, 300);
+	      container.classList.add('loaded');
+	      document.body.classList.add('loaded');
+	    }, 400);
+
+	    setTimeout(function() {
+	      document.body.classList.add('load-img');
+	    }, 600);
 	}
 	componentWillUnmount() {
 		var container = document.getElementById('content-container');
 	    container.classList.remove('loaded');
+	    document.body.classList.remove('loaded');
 	    document.body.classList.remove('work-page');
+	    document.body.classList.remove('load-img');
 	}
 }

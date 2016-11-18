@@ -14,7 +14,7 @@ module.exports = React.createClass({
       <header id="header">
         <div className="header-content">
           <div className="logo">
-            <Link to={prefixLink('/')}>gregcorby.com</Link>
+            <Link to={prefixLink('/')}>Greg Corby</Link>
           </div>
           <ul>
             <li id="work-link"><Link to={prefixLink('/work/')}>Work</Link></li>

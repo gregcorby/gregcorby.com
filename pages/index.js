@@ -14,17 +14,21 @@ export default class Sass extends React.Component {
           <DocumentTitle title={ 'Greg Corby' }></DocumentTitle>
 
           <div className="row sm-row hero-text">
-          <h2 className="intro"><span>Greg Corby is a <br />sun-drenched, <br />salty designer.</span></h2>
+          <h2 className="intro"><span>A Sun-Drenched<br />&amp; Salty Designer.</span></h2>
           </div>
           
           <div className="about">
-            <div className="row sm-row">
-                <div className="hero-image column sm-column-50"></div>
-                <div className="about-copy column sm-column-50">
-                  <p>I help brands make digital things that<br />aren't over-complicated and look nice.</p>
-                  <Link to={prefixLink('/contact/')}>Let's work together</Link>
+            
+
+                <div className="about-copy">
+                  <p>I like helping brands make digital things that <br />aren't over-complicated and look nice.</p>
+                  <Link to={prefixLink('/work/')}>View work &rarr;</Link>
                 </div>
-            </div>
+                <div className="hero-image-container">
+                  <div className="img-left"></div>
+                  <div className="img-right"></div>
+                </div>
+            
             </div>      
         </div>
       </div>
@@ -34,15 +38,24 @@ export default class Sass extends React.Component {
     var container = document.getElementById('content-container');
     document.body.classList.add('home-page');
     setTimeout(function() {
-      container.classList.add('loaded')
+      container.classList.add('loaded');
+      document.body.classList.add('loaded');
     }, 300);
+    
     setTimeout(function() {
       container.classList.add('loaded-text')
-    }, 1200);
+    }, 600);
+
+    setTimeout(function() {
+      document.body.classList.add('loaded-img')
+    }, 700);
   }
   componentWillUnmount() {
     var container = document.getElementById('content-container');
     document.body.classList.remove('home-page');
+    container.classList.remove('loaded-text');
+    document.body.classList.remove('loaded-img');
     container.classList.remove('loaded');
+    document.body.classList.remove('loaded');
   }
 }

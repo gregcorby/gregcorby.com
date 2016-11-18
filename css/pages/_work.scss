@@ -1,18 +1,32 @@
 .work-container {
   padding-bottom: 40px;
   padding-top: 100px;
+  z-index: 0;
+  position: relative;
+  background-color: $tan;    
+  
   @media  (min-width: 40em) {
     padding-top: 180px;
+    margin: 0;
   }
 }
 .project {
   position: relative;
   padding: 0px; 
   margin: 0;
-  background-color: hsl(37, 81%, 97%);
+  background-color: $tan;
   padding-bottom: 0px;
   padding-top: 60px;
-  border-bottom: 1px solid rgba(0,0,0,.08);
+  border-bottom: 2px solid #00ffff;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  transition: all 300ms ease-in-out;
+  @media  (min-width: 40em) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
 
   .project-details {
     padding: 0 40px 40px 40px;
@@ -41,7 +55,9 @@
     }
 
     @media  (min-width: 40em) {
+
       padding: 0 100px 100px 100px;
+
       h2 {
         font-size: 36px;
         line-height: 48px;
@@ -55,12 +71,12 @@
       width: 120%;
       display: block;
       height: auto;
-      opacity: 0;
       margin: 0 auto;
       max-width: 1200px;
       margin-left: -10%;
-      animation: img-fade 300ms 1;
+      transition: all 200ms ease-out;
       position: relative;
+      transform: translateY(20px);
       @media  (min-width: 40em) {
         margin-left: auto;
         width: 100%;
@@ -70,31 +86,19 @@
   }
 }
 
-body.work-page .project .project-images img {
-  transform: translateY(0px);
-  opacity: 1;
-}
 
-body.home-page .project .project-images img {
-  transform: translateY(20px);
-  opacity: 1;
-}
-
-@keyframes img-fade {
-  0% {
-    opacity: 0;
-    top: -60px;
-  }
-  100% {
-    opacity: 1;
-    top: 0;
-  }
-}
 
 .work-page {
   header {
     position: fixed;
     left: 0;
     top: 0;
+  }
+  &.loaded {
+    .project-images {
+      img {
+        transform: translateY(0px);
+      }
+    }
   }
 }

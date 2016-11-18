@@ -1,4 +1,13 @@
+.home-page {
+  header {
+      height: 100px;
+      position: relative;
+    @media  (min-width: 40em) {
+      height: 380px;
 
+    }
+  }
+}
 
 .home-container {
   position: relative;
@@ -8,173 +17,199 @@
   @media  (min-width: 40em) {
     background-image: none;
     padding-top: 0; 
+
   }
+
 }
 
 
 
-  
-  .hero-image {
+
+  .hero-image-container {
       display: none;
-      position: relative;
-      right: auto;
-      top: auto;
-      width: 100%;
-      background-size: cover;
-      height: 41vw;
-      background-image: linear-gradient(to right, rgba(55,201,245,1) 0%, rgba(55,201,245,1) 100%), url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
-      background-repeat: no-repeat;
-      background-position: left bottom, left top;
-      background-color: #37CAF5;
-      max-width: 100%;
-      transition: all 200ms ease-out;
+      height: 40vw;
       
-      @media  (min-width: 40em) {
-        display: block;
-        right: 400px;
-        position: absolute;
-        top: -140px;
-        background-size: 100% 100%, 55vw auto;
-        width: calc(55vw - 300px);
-        &:after {
-          content: "";
+      vertical-align: top;
+      position: relative;
+      width: 55%;
+      margin-top: -200px;
+      .img-left {
           display: block;
-          position: absolute;
-          right: -400px;
-          width: 400px;
-          height: 100%;
-          background-image: linear-gradient(to right, rgba(55,231,245,1) 0%, rgba(55,231,245,1) 100%), url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
+          vertical-align: top;
+          width: 35vw;
+          height: 38vw;
+          background-image: url(https://cl.ly/27151p0M300x/wave.jpg);
+          background-color: #D9A7AB;
           background-repeat: no-repeat;
-          background-size: 100% 100%, 55vw auto;
-          background-color: #3462AE;
-          background-position: right top, right top;
-          transition: all 200ms ease-out;
-          transform: translateY(-200px);
-          z-index: -1;
-        }
+          background-position: left -5vw;
+          background-size: 60vw auto;
+          vertical-align: top;
+          transition: all 200ms ease-in-out;
+          transform: translateY(-20px);
+          box-shadow: 0 0vw 0 0 #D9A7AB inset;
+        } 
+
+      .img-right {
+        display: none;
+        vertical-align: top;
+        width: 20vw;
+        height: 38vw;
+        background-image:  linear-gradient(to bottom, rgba(25,42,61,0) 50%, rgba(25,42,61,1) 90%), url(https://cl.ly/27151p0M300x/wave.jpg);
+        background-color: #2E4B71;
+        background-repeat: no-repeat;
+        background-size: 100% 500%, 60vw auto;
+        background-position: right bottom, right -5vw;
+        z-index: -1;
+        vertical-align: top;
+        transform: translateY(20px);
+        transition: all 200ms ease-in-out;
+        opacity: .9;
+      }
+    }
+
+  .loaded-img  .home-container .hero-image-container {
+    .img-left {
+    }
+    .img-right {
+        transform: translateY(10px);
+        background-image:  linear-gradient(to bottom, rgba(25,42,61,0) 50%, rgba(25,42,61,1) 90%), url(https://cl.ly/27151p0M300x/wave.jpg);
+        background-size: 100% 100%, 60vw auto;
       }
   }
-
-  .loaded  .home-container .hero-image {
-    top: -200px;
-    
-    &:after {
-      transform: translateY(100px) translateX(0px);
+  .loaded  .home-container .hero-image-container {
+      .img-left {
+        transform: translateY(0px);
+      }
+      .img-right {}
+  }
+  @media  (min-width: 40em) {
+    .hero-image-container {
+      display: inline-block;
+      .img-left {
+        display: inline-block;
+      }
+      .img-right {
+        display: inline-block;
+      }
     }
     
   }
-
-  .loaded-text  .home-container .hero-image {
-    background-image: linear-gradient(to right, rgba(55,201,245,1) 100%, rgba(55,201,245,1) 100%), url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
-    background-size: 100% 0px, 55vw auto;
     
-    &:after {
-      background-image: linear-gradient(to right, rgba(55,201,245,1) 100%, rgba(55,201,245,1) 100%), url(https://cl.ly/0y2m3y0I3y1O/wave.jpg);
-      background-size: 100% 0px, 55vw auto;
-    }
-  }
 
   .about {
+    font-size: 0;
     margin: 0;
     display: block;
     padding: 0;
     position: static;
-    background-color: #F5C7CA;
     padding: 0;
-    box-shadow: 0 200px 0 0 #F5C7CA;
     width: 100%;
     box-sizing: border-box;
+    @media  (min-width: 40em) {
+      padding: 0;
+    }
 
     .about-copy {
       box-sizing: border-box;
-      padding: 40px;
+      padding: 80px 40px 40px 40px;
+      background-color: #F5C7CA;
+      box-shadow: 35vw 0 0 0 #F5C7CA;
+      display: inline-block;
+      min-height: calc(100vh - 300px);
       p {
-        font-size: 26px;
+        font-size: 22px;
         line-height: 36px;
         font-weight: 200;
         padding: 0;
         margin: 0;
         opacity: .6;
-      
         &:first-child {
           margin-bottom: 20px;
         }
-
       }
       a {
-        font-size: 26px;
+        font-size: 22px;
       }
-    }
-    @media  (min-width: 40em) {
-      margin-top: 180px;
-      width: calc(100% - 400px);
-      min-height: calc(100vh - 360px);
-      padding: 0 120px;
-      .about-copy {
-        padding-top: 220px;
-        padding-right: 0px;
-        padding-left: 0;
+      @media  (min-width: 40em) {
+        
+        width: 45%;
+        vertical-align: top;
+        padding: 16vw 40px 40px 120px;
+        min-height: calc(100vh - 380px);
       }
     }
     
 
   
   }
-.hero-text {
+  .hero-text {
     z-index: 99;
     
     @media  (min-width: 40em) {
-      left: 100px;
+      left: 120px;
       position: absolute;
     }
     
-}
-
-  h2.intro {
-      font-size: 12vw;
-      line-height: .9em;
-      margin: 0;
-      color: #fff;
-      letter-spacing: -1.5px;
-      position: relative;
-      text-align: left;
-      padding: 0 40px 40px 40px;
-      
-      @media  (min-width: 40em) {
-        font-size: 7vw;
-        margin-left: 0px;
+    h2.intro {
+        font-size: 10vw;
+        line-height: 1.2em;
+        margin: 0;
+        color: #fff;
+        letter-spacing: -1.5px;
+        position: relative;
         text-align: left;
-        padding: 0;
-        span {
-          -webkit-clip-path: polygon(0 1.4em, 100% 1.4em, 100% 100%, 0% 100%);
-          clip-path: polygon(0 1.4em, 100% 1.4em, 100% 100%, 0% 100%);
-          display: inherit;
-          position: relative;
-          top: -1.4em;
-          left: -30px;
-          padding-bottom: 20px;
-          transition: all 200ms ease-in-out;
-          opacity: 0;
-        }
-        &:before {
-          content: "Greg Corby is a \A  sun-drenched,";
-          position: absolute;
-          top: -1.4em;
-          width: 100%;
-          height: 100%;
-          color: #fff;
-          z-index: -1;
-          left: 40px;
-          transition: all 200ms ease-in-out;
-          -webkit-clip-path: polygon(0 0, 100% 0, 100% 1.4em, 0 1.4em);
-          clip-path: polygon(0 0, 100% 0, 100% 1.4em, 0 1.4em);
-          opacity: 0;
+        padding: 0 40px 0px 40px;
+        
+        top: -.7em;
+        
+        @media  (min-width: 40em) {
+          font-size: 8vw;
+          margin-left: 0px;
+          text-align: left;
+          padding: 0;
+          left: -80px;
+          span {
+            -webkit-clip-path: polygon(0 .7em, 100% .7em, 100% 100%, 0% 100%);
+            clip-path: polygon(0 .7em, 100% .7em, 100% 100%, 0% 100%);
+            display: inherit;
+            position: relative;
+            left: -30px;
+            padding-bottom: 20px;
+            transition: all 200ms ease-in-out;
+            opacity: 0;
+
+          }
+          &:before {
+            content: "A Sun-Drenched";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            z-index: -1;
+            left: 40px;
+            transition: all 200ms ease-in-out;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% .7em, 0 .7em);
+            clip-path: polygon(0 0, 100% 0, 100% .7em, 0 .7em);
+            opacity: 0;
+            
+          }
+          
         }
         
-      }
-      
 
+    }
   }
+  @media  (min-width: 40em) {
+  .loaded-text .home-container h2.intro:before {
+    left: 10px;
+    opacity: 1;
+  }
+
+  .loaded-text .home-container h2.intro span {
+    left: 0px;
+    opacity: 1;
+  }
+}
 
   
 
@@ -187,20 +222,7 @@
   }
 
 
-@media  (min-width: 40em) {
-  .loaded-text .home-container h2.intro:before {
-    left: 0px;
-    opacity: 1;
-  }
 
-  .loaded-text .home-container h2.intro span {
-    left: -3px;
-    opacity: 1;
-  }
-
-  
-  
-}
 
 
 
