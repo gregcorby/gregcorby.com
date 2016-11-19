@@ -2,6 +2,7 @@
   header {
       height: 100px;
       position: static;
+      
     @media  (min-width: 40em) {
       height: 380px;
 
@@ -39,21 +40,37 @@
           width: 35vw;
           height: 38vw;
           background-image: url(https://cl.ly/27151p0M300x/wave.jpg);
-          background-color: #D9A7AB;
+          background-color: #303F51;
           background-repeat: no-repeat;
-          background-position: left -5vw;
-          background-size: 60vw auto;
+          background-position: right -50px;
+          background-size: 55vw auto;
           vertical-align: top;
           transition: all 200ms ease-in-out;
           transform: translateY(-20px);
-          box-shadow: 0 0vw 0 0 #D9A7AB inset;
+          box-shadow: 0 0vw 0 0 #303F51 inset;
+          &:after {
+            
+            background-image: url(https://cl.ly/27151p0M300x/wave.jpg);
+            background-color: #303F51;
+            background-repeat: no-repeat;
+            background-position: right -50px;
+            background-size: 55vw auto;
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            top: 0;
+            left: -60px;
+            box-shadow: 60px 0 0 0 #303F51;
+            
+            ; 
+          }
         } 
 
       .img-right {
         display: none;
         vertical-align: top;
         width: 20vw;
-        height: 38vw;
+        height: 30vw;
         background-image:  linear-gradient(to bottom, rgba(25,42,61,0) 50%, rgba(25,42,61,1) 90%), url(https://cl.ly/27151p0M300x/wave.jpg);
         background-color: #2E4B71;
         background-repeat: no-repeat;
@@ -61,26 +78,23 @@
         background-position: right bottom, right -5vw;
         z-index: -1;
         vertical-align: top;
-        transform: translateY(20px);
+        transform: translateY(200px);
         transition: all 200ms ease-in-out;
-        opacity: .9;
+        opacity: 1;
+        
       }
     }
 
-  .loaded-img  .home-container .hero-image-container {
-    .img-left {
-    }
-    .img-right {
-        transform: translateY(10px);
-        background-image:  linear-gradient(to bottom, rgba(25,42,61,0) 50%, rgba(25,42,61,1) 90%), url(https://cl.ly/27151p0M300x/wave.jpg);
-        background-size: 100% 100%, 60vw auto;
-      }
-  }
+
   .loaded  .home-container .hero-image-container {
       .img-left {
         transform: translateY(0px);
       }
-      .img-right {}
+      .img-right {
+        transform: translateY(40px);
+        background-image:  linear-gradient(to bottom, rgba(25,42,61,0) 50%, rgba(25,42,61,1) 90%), url(https://cl.ly/27151p0M300x/wave.jpg);
+        background-size: 100% 100%, 60vw auto;
+      }
   }
   @media  (min-width: 40em) {
     .hero-image-container {
@@ -105,6 +119,7 @@
     padding: 0;
     width: 100%;
     box-sizing: border-box;
+    background-color: #1B2B3E;
     @media  (min-width: 40em) {
       padding: 0;
     }
@@ -112,8 +127,8 @@
     .about-copy {
       box-sizing: border-box;
       padding: 80px 40px 40px 40px;
-      background-color: #F5C7CA;
-      box-shadow: 0 35vh 0 0 #F5C7CA;
+      background-color: #fff;
+      box-shadow: 0 35vh 0 0 #fff;
       display: inline-block;
       min-height: calc(100vh - 300px);
       p {
@@ -134,7 +149,7 @@
         display: none;
       }
       @media  (min-width: 40em) {
-        box-shadow: 35vw 0 0 0 #F5C7CA;
+        box-shadow: 35vw 0 0 0 #fff;
         width: 45%;
         vertical-align: top;
         padding: 16vw 40px 40px 120px;
@@ -160,7 +175,7 @@
         font-size: 10vw;
         line-height: 1.2em;
         margin: 0;
-        color: #fff;
+        color: #303F51;
         letter-spacing: -1.5px;
         position: relative;
         text-align: left;
@@ -190,7 +205,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            color: #fff;
+            color: #303F51;
             z-index: -1;
             left: 40px;
             transition: all 200ms ease-in-out;
