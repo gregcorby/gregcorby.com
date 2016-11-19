@@ -1,12 +1,19 @@
 .home-page {
   header {
-      height: 100px;
+      height: 160px;
       position: static;
+      transition: all 200ms ease-in-out;
+
       
     @media  (min-width: 40em) {
       height: 380px;
 
     }
+  }
+}
+@media  (max-width: 40em) {
+  .home-page.loaded header{
+    height: 120px;
   }
 }
 
@@ -29,81 +36,71 @@
   .hero-image-container {
       display: none;
       height: 40vw;
-      
       vertical-align: top;
       position: relative;
       width: 55%;
-      margin-top: -200px;
+      margin-top: calc(-120px - 5vw);
       .img-left {
           display: block;
+          position: absolute;
+          left: 0px;
+          top: -40px;
           vertical-align: top;
-          width: 35vw;
-          height: 38vw;
+          width: 100%;
+          height: 40vw;
           background-image: url(https://cl.ly/27151p0M300x/wave.jpg);
-          background-color: #303F51;
           background-repeat: no-repeat;
-          background-position: right -50px;
+          background-position: right top;
           background-size: 55vw auto;
           vertical-align: top;
           transition: all 200ms ease-in-out;
-          transform: translateY(-20px);
-          box-shadow: 0 0vw 0 0 #303F51 inset;
-          &:after {
-            
-            background-image: url(https://cl.ly/27151p0M300x/wave.jpg);
-            background-color: #303F51;
-            background-repeat: no-repeat;
-            background-position: right -50px;
-            background-size: 55vw auto;
-            position: absolute;
-            width: 100%;
-            height: 200px;
-            top: 0;
-            left: -60px;
-            box-shadow: 60px 0 0 0 #303F51;
-            
-            ; 
-          }
+          box-shadow: 0 0vw 0 0 rgba(250, 250, 250, 1) inset;
+          -webkit-clip-path:  inset(0 20vw 0 0);
+          opacity: 0;
+
+
+         
         } 
 
       .img-right {
         display: none;
-        vertical-align: top;
-        width: 20vw;
-        height: 30vw;
-        background-image:  linear-gradient(to bottom, rgba(25,42,61,0) 50%, rgba(25,42,61,1) 90%), url(https://cl.ly/27151p0M300x/wave.jpg);
-        background-color: #2E4B71;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 40vw;
+        background-image:  linear-gradient(to bottom, rgba(250, 250, 250, 0) 50%, rgba(250, 250, 250, 1) 90%), url(https://cl.ly/27151p0M300x/wave.jpg);
         background-repeat: no-repeat;
-        background-size: 100% 500%, 60vw auto;
-        background-position: right bottom, right -5vw;
-        z-index: -1;
+        background-size: 100% 100%, 55vw auto;
+        background-position: right bottom, right top;
+        -webkit-clip-path:  inset(0 0 0 35vw);
         vertical-align: top;
-        transform: translateY(200px);
         transition: all 200ms ease-in-out;
-        opacity: 1;
+        
+        opacity: 0;
         
       }
     }
 
 
-  .loaded  .home-container .hero-image-container {
+  .loaded-img  .home-container .hero-image-container {
       .img-left {
-        transform: translateY(0px);
+        top: 0;
+        opacity: 1;
       }
       .img-right {
-        transform: translateY(40px);
-        background-image:  linear-gradient(to bottom, rgba(25,42,61,0) 50%, rgba(25,42,61,1) 90%), url(https://cl.ly/27151p0M300x/wave.jpg);
-        background-size: 100% 100%, 60vw auto;
+        top: 20px;
+        opacity: 1;
       }
   }
   @media  (min-width: 40em) {
     .hero-image-container {
       display: inline-block;
       .img-left {
-        display: inline-block;
+        display: block;
       }
       .img-right {
-        display: inline-block;
+        display: block;
       }
     }
     
@@ -119,14 +116,14 @@
     padding: 0;
     width: 100%;
     box-sizing: border-box;
-    background-color: #1B2B3E;
+    background-color: rgba(250, 250, 250, 1);
     @media  (min-width: 40em) {
       padding: 0;
     }
 
     .about-copy {
       box-sizing: border-box;
-      padding: 80px 40px 40px 40px;
+      padding: 40px 40px 40px 40px;
       background-color: #fff;
       box-shadow: 0 35vh 0 0 #fff;
       display: inline-block;
@@ -173,15 +170,15 @@
     
     h2.intro {
         font-size: 10vw;
-        line-height: 1.2em;
+        line-height: 1;
         margin: 0;
         color: #303F51;
         letter-spacing: -1.5px;
         position: relative;
         text-align: left;
         padding: 0 40px 0px 40px;
-        
-        top: -.7em;
+        top: -5vw;
+        transition: all 100ms ease-in-out;
         
         @media  (min-width: 40em) {
           font-size: 8vw;
@@ -190,27 +187,26 @@
           padding: 0;
           left: -80px;
           span {
-            -webkit-clip-path: polygon(0 .7em, 100% .7em, 100% 100%, 0% 100%);
-            clip-path: polygon(0 .7em, 100% .7em, 100% 100%, 0% 100%);
+            -webkit-clip-path:  inset(5vw 0 0 0);
             display: inherit;
             position: relative;
             left: -30px;
             padding-bottom: 20px;
-            transition: all 200ms ease-in-out;
+            transition: all 100ms ease-in-out;
             opacity: 0;
+            width: 100%;
+            height: 100%;
 
           }
           &:before {
-            content: "A Sun-Drenched";
+            content: "A Sun-Drenched \A & Salty Designer.";
             position: absolute;
             width: 100%;
             height: 100%;
             color: #303F51;
-            z-index: -1;
             left: 40px;
-            transition: all 200ms ease-in-out;
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% .7em, 0 .7em);
-            clip-path: polygon(0 0, 100% 0, 100% .7em, 0 .7em);
+            transition: all 100ms ease-in-out;
+            -webkit-clip-path:  inset(0 0 calc(100% - 5vw) 0);
             opacity: 0;
             
           }
@@ -234,10 +230,10 @@
   .loaded-text .home-container h2.intro:hover {
     
     &:before {
-      left: 11px;
+      left: 0;
     }
     span {
-      left: -1px;
+      left: 0px;
     }
   }
 }

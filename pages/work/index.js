@@ -8,7 +8,9 @@ export default class Sass extends React.Component {
 
     return (
 	<div className="page-container" id="content-container">
+
 		      <div className="work-container">
+		      <h2 className="work-header">Things I've made.</h2>
 			
 				<div id="opentable" className="project">
 					<div className="project-images">
@@ -98,11 +100,11 @@ export default class Sass extends React.Component {
 	    setTimeout(function() {
 	      container.classList.add('loaded');
 	      document.body.classList.add('loaded');
-	    }, 400);
+	    }, 300);
 
 	    setTimeout(function() {
 	      document.body.classList.add('load-img');
-	    }, 1000);
+	    }, 800);
 	}
 	componentWillUnmount() {
 		var container = document.getElementById('content-container');
