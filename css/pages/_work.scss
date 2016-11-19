@@ -14,19 +14,19 @@
 .project {
   position: relative;
   padding: 0px; 
-  
   background-color: $tan;
   padding-bottom: 0px;
   padding-top: 60px;
-  border-bottom: 2px solid rgba(0,0,0,.1);
-  margin-left: 0px;
-  margin-right: 0px;
+
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 40px;
   margin-top: 20px;
   transition: all 300ms ease-in-out;
   opacity: 0;
   @media  (min-width: 40em) {
-      
+      margin-left: 40px;
+  margin-right: 40px;
     }
 
 
@@ -97,7 +97,8 @@
     top: 0;
     #work-link {
       a {
-        box-shadow: 0em -1em 0 0 $blue inset; 
+        box-shadow: 0em -1em 0 0 #fff inset; 
+        color: #37577a
       }
     }
   }

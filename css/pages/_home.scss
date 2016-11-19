@@ -224,11 +224,21 @@
   .loaded-text .home-container h2.intro:before {
     left: 10px;
     opacity: 1;
+
   }
 
   .loaded-text .home-container h2.intro span {
     left: 0px;
     opacity: 1;
+  }
+  .loaded-text .home-container h2.intro:hover {
+    
+    &:before {
+      left: 11px;
+    }
+    span {
+      left: -1px;
+    }
   }
 }
 
