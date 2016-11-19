@@ -18,7 +18,7 @@ module.exports = React.createClass({
           </div>
           <ul>
             <li id="work-link"><Link to={prefixLink('/work/')}>Work</Link></li>
-            <li id="contact-link"><Link to={prefixLink('/contact/')}>Contact</Link></li>
+            <li id="contact-link"><a href="mailto:greg.corby@gmail.com">Contact</a></li>
           </ul>
         </div>
  
@@ -32,6 +32,7 @@ module.exports = React.createClass({
     )
   },
   componentDidMount(){
+
     var toggle = document.getElementById('toggle'),
         logo = document.getElementById('logo-link'),
         workLink = document.getElementById('work-link'),

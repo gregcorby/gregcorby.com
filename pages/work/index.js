@@ -102,7 +102,7 @@ export default class Sass extends React.Component {
 
 	    setTimeout(function() {
 	      document.body.classList.add('load-img');
-	    }, 600);
+	    }, 1000);
 	}
 	componentWillUnmount() {
 		var container = document.getElementById('content-container');

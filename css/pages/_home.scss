@@ -1,7 +1,7 @@
 .home-page {
   header {
       height: 100px;
-      position: relative;
+      position: static;
     @media  (min-width: 40em) {
       height: 380px;
 
@@ -11,7 +11,7 @@
 
 .home-container {
   position: relative;
-  padding-top: 110px;
+  padding-top: 50px;
   
 
   @media  (min-width: 40em) {
@@ -113,7 +113,7 @@
       box-sizing: border-box;
       padding: 80px 40px 40px 40px;
       background-color: #F5C7CA;
-      box-shadow: 35vw 0 0 0 #F5C7CA;
+      box-shadow: 0 35vh 0 0 #F5C7CA;
       display: inline-block;
       min-height: calc(100vh - 300px);
       p {
@@ -130,12 +130,18 @@
       a {
         font-size: 22px;
       }
+      br {
+        display: none;
+      }
       @media  (min-width: 40em) {
-        
+        box-shadow: 35vw 0 0 0 #F5C7CA;
         width: 45%;
         vertical-align: top;
         padding: 16vw 40px 40px 120px;
         min-height: calc(100vh - 380px);
+        br {
+          display: block;
+        }
       }
     }
     

@@ -2,9 +2,18 @@ header {
   
   z-index: 9999;
   padding: 0; 
-  position: absolute;
+  position: relative;
   width: 100%;
   padding: 40px;
+  
+  .home-page & {
+    background-color: $black;
+  }
+
+  .work-page & {
+    position: fixed;
+  }
+
   @media  (min-width: 40em) {
     padding: 0 120px;
     height: 180px;

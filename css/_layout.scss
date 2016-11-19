@@ -31,9 +31,13 @@ body.home-page {
 }
 
 body.work-page {
-    opacity: 1;
+    
 
     &.loaded {
+      .work-container {
+        background-color: $tan;    
+      }
+      
       .logo a {
         color: #37577a;
       }
@@ -41,26 +45,10 @@ body.work-page {
       
     }
     &.load-img {
-      .border {
-        box-shadow: 0 0 0 20px $black;
-        top: 10px;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
-        opacity: 1;
-        @media  (min-width: 40em) {
-          top: 20px;
-          bottom: 20px;
-          left: 20px;
-          right: 20px;
-          box-shadow: 0 0 0 20px $black;
-        }
       .project {
         opacity: 1;
+        margin-top: 0;
       }
-        
-      }
-      
     }
     
       
@@ -70,9 +58,9 @@ body.work-page {
 
 
 .container {
-    min-height: 100vh;
+    
     position: relative;
-    overflow: hidden;
+    
 
 }
 
