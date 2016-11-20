@@ -18,12 +18,15 @@
     padding: 0px 40px 40px 40px;
     text-align: center;
     font-size: 36px;
-    color: #fff;
+    color: $black;
+    letter-spacing: 0;
+
 
   @media  (min-width: 40em) {
    padding: 40px 120px 120px 120px;
-  text-align: left;
-  font-size: 64px;
+    text-align: left;
+    font-size: 96px;
+    line-height: 82px;
   }
   
 }
@@ -41,8 +44,8 @@
   transition: all 200ms ease-in-out;
   
   @media  (min-width: 40em) {
-      margin-left: 40px;
-      margin-right: 40px;
+      margin-left: 0px;
+      margin-right: 120px;
     }
 
 
@@ -114,10 +117,10 @@
     position: fixed;
     left: 0;
     top: 0;
+    
     #work-link {
       a {
-        box-shadow: 0em -1em 0 0 #fff inset; 
-        color: #37577a;
+     
       }
     }
   }

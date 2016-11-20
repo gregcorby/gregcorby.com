@@ -10,7 +10,7 @@ export default class Sass extends React.Component {
 	<div className="page-container" id="content-container">
 
 		      <div className="work-container">
-		      <h2 className="work-header">Things I've made.</h2>
+		      <h2 className="work-header">Some things I've<br />put together.</h2>
 			
 				<div id="opentable" className="project">
 					<div className="project-images">

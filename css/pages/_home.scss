@@ -69,7 +69,7 @@
         left: 0;
         width: 100%;
         height: 40vw;
-        background-image:  linear-gradient(to bottom, rgba(250, 250, 250, 0) 50%, rgba(250, 250, 250, 1) 90%), url(https://cl.ly/27151p0M300x/wave.jpg);
+        background-image:  linear-gradient(to bottom, rgba(254, 250, 241, 0) 50%, rgba(254, 250, 241, 1) 90%), url(https://cl.ly/27151p0M300x/wave.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%, 55vw auto;
         background-position: right bottom, right top;
@@ -116,7 +116,7 @@
     padding: 0;
     width: 100%;
     box-sizing: border-box;
-    background-color: rgba(250, 250, 250, 1);
+    background-color: rgba(254, 250, 241, 1);
     @media  (min-width: 40em) {
       padding: 0;
     }
@@ -172,7 +172,7 @@
         font-size: 10vw;
         line-height: 1;
         margin: 0;
-        color: #303F51;
+        color: $black;
         letter-spacing: -1.5px;
         position: relative;
         text-align: left;
@@ -185,7 +185,7 @@
           margin-left: 0px;
           text-align: left;
           padding: 0;
-          left: -80px;
+          left: 0px;
           span {
             -webkit-clip-path:  inset(5vw 0 0 0);
             display: inherit;
@@ -203,7 +203,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            color: #303F51;
+            color: $black;
             left: 40px;
             transition: all 100ms ease-in-out;
             -webkit-clip-path:  inset(0 0 calc(100% - 5vw) 0);
