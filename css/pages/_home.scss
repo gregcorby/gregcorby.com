@@ -72,7 +72,7 @@
         background-image:  linear-gradient(to bottom, rgba(254, 250, 241, 0) 50%, rgba(254, 250, 241, 1) 90%), url(https://cl.ly/27151p0M300x/wave.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%, 55vw auto;
-        background-position: right bottom, right top;
+        background-position: right bottom, right -10px;
         -webkit-clip-path:  inset(0 0 0 35vw);
         vertical-align: top;
         transition: all 200ms ease-in-out;
@@ -89,7 +89,7 @@
         opacity: 1;
       }
       .img-right {
-        top: 20px;
+        top: 0px;
         opacity: 1;
       }
   }
@@ -177,7 +177,7 @@
         position: relative;
         text-align: left;
         padding: 0 40px 0px 40px;
-        top: -5vw;
+        top: -8vw;
         transition: all 100ms ease-in-out;
         
         @media  (min-width: 40em) {
@@ -186,6 +186,7 @@
           text-align: left;
           padding: 0;
           left: 0px;
+          top: -5vw;
           span {
             -webkit-clip-path:  inset(5vw 0 0 0);
             display: inherit;
@@ -199,7 +200,7 @@
 
           }
           &:before {
-            content: "A Sun-Drenched \A & Salty Designer.";
+            content: "A sun-drenched \A & salty designer.";
             position: absolute;
             width: 100%;
             height: 100%;

@@ -14,14 +14,14 @@ export default class Sass extends React.Component {
           <DocumentTitle title={ 'Greg Corby' }></DocumentTitle>
 
           <div className="hero-text">
-          <h2 className="intro"><span>A Sun-Drenched<br />&amp; Salty Designer.</span></h2>
+          <h2 className="intro"><span>A sun-drenched<br />&amp; salty designer.</span></h2>
           </div>
           
           <div className="about">
             
 
                 <div className="about-copy">
-                  <p>I like helping brands make digital things that <br />aren't over-complicated and look nice.</p>
+                  <p>I help brands make digital stuff that<br />looks nice and isn't overly-complicated.</p>
                   <Link to={prefixLink('/work/')}>View work &rarr;</Link>
                 </div>
                 <div className="hero-image-container">
