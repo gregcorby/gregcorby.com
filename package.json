@@ -21,6 +21,7 @@
     "markdown-it-deflist": "^2.0.1",
     "markdown-it-footnote": "^2.0.0",
     "markdown-it-sub": "^1.0.0",
+    "markdown-it-table-of-contents": "^0.3.0",
     "moment": "^2.14.1",
     "object-assign": "^4.0.1",
     "react-addons-transition-group": "^15.3.2",

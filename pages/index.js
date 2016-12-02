@@ -21,7 +21,7 @@ export default class Sass extends React.Component {
             
 
                 <div className="about-copy">
-                  <p>I help brands make digital stuff that<br />looks nice and isn't overly-complicated.</p>
+                  <p>I help brands make digital stuff that <br />looks nice and isn't overly-complicated.</p>
                   <Link to={prefixLink('/work/')}>View work &rarr;</Link>
                 </div>
                 <div className="hero-image-container">
