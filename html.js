@@ -19,6 +19,7 @@ module.exports = React.createClass({
     return (
       <html lang="en">
         <head>
+          <!-- D1A7D7C3-3A2C-471F-8C7C-FA5121A07A64 -->
           <DocumentTitle title={ 'ThatsPretty.Cool' }></DocumentTitle>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
